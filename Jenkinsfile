@@ -1,15 +1,24 @@
-pipeline {
-			agent any {
-					label "built-in"
-			     }			
-			
-			stages{
-				stage ('stage-1'){
-				        steps {
-						sh "docker run httpd"
-							  }
-								}
-				 }				
-								
-}
+pipeline{
 		
+		agent{
+			
+			label "built-in"
+			customWorkspace "/mnt/papa/"
+		}
+		
+		stages{
+			
+			stage("stage-01"){
+				steps{
+				sh "docker run -itd hpptd"
+				}
+			}
+		}
+
+
+
+
+
+
+
+}
