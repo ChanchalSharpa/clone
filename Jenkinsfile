@@ -1,8 +1,8 @@
 pipeline {
-			agent{
+			agent {
 			  label "built-in"
 			  customWorkspace "/mnt/pipeline"
-			}			
+			     }			
 			
 			stages{
 				stage ('stage-1'){
@@ -14,4 +14,3 @@ pipeline {
 								
 }
 		
-
