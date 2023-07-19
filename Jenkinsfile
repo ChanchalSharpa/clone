@@ -1,18 +1,17 @@
-pipeline{
-		agent {
-				label }
-						label "built-in"
-						customWorkspace "/mnt/pipeline"
-						
-						
-						
-				stages{
-						stage('stage-1')
-							{
-							steps {
-								 sh "docker run -itd httpd"
-								 }
-							}
-		                     }	
-  }
+pipeline {
+			agent{
+			  label "built-in"
+			  customWorkspace "/mnt/pipeline"
+			}			
+			
+			stages{
+				stage ('stage-1'){
+				        steps {
+						sh "docker run httpd"
+							  }
+								}
+				 }				
+								
+}
 		
+
