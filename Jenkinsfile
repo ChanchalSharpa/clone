@@ -14,6 +14,7 @@ pipeline{
 			stage("stage-01"){
 				steps{
 				sh "docker run -itd httpd"
+				sh
 				}
 			}
 		}
