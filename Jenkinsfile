@@ -4,7 +4,6 @@ pipeline{
 						label "built-in"
 						customWorkspace "/mnt/pipeline"
 						
-						}
 						
 						
 				stages{
@@ -14,5 +13,6 @@ pipeline{
 								 sh "docker run -itd httpd"
 								 }
 							}
-		}	    }
+		                     }	
+  }
 		
